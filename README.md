@@ -184,4 +184,3 @@ If you have any questions, feel free to reach out:
 > “Code is poetry. Simplicity is elegance.”
 > — Built with ❤️ by Raeen
 
-```
