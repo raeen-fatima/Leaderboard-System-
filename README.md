@@ -4,7 +4,6 @@ Perfect! Here's a **complete README.md** + supporting **documentation** you can 
 
 ---
 
-## ✅ `README.md`
 
 ```md
 # 🏆 Real-Time Leaderboard System
