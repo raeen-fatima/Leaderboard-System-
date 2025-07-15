@@ -51,14 +51,14 @@ A full-stack real-time leaderboard system where users can be added, awarded poin
 │   ├── pages (Leaderboard.jsx, Users.jsx, History.jsx)
 │   └── App.jsx
 └── README.md
+## 🚀 Getting Started
 
+### 📥 Clone the Repository
 ````
 
 ---
 
-## 🚀 Getting Started
 
-### 📥 Clone the Repository
 
 ```bash
 git clone https://github.com/your-username/leaderboard-app.git
