@@ -80,7 +80,7 @@ export default function ClaimHistory() {
 
             <div className="md:col-span-3 flex items-center gap-2">
               <FaStar className="text-yellow-300" />
-              <span>{entry.points} pts</span>
+              <span>+{entry.points}pts</span>
             </div>
 
             <div className="md:col-span-5 text-sm text-gray-300 text-right hidden md:block">
