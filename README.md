@@ -1,6 +1,3 @@
-# Leaderboard-System-
-A real-time full-stack leaderboard system where users can be added, claim random points (1–10), and get ranked dynamically. Features include user creation, animated top 3 podium, live leaderboard updates, point history logging, pagination, and a clean responsive UI. Built with Node.js, MongoDB, and React.js.
-Perfect! Here's a **complete README.md** + supporting **documentation** you can directly include in your submission. It explains the project, setup, usage, features, and technologies clearly — just like companies expect.
 
 ---
 
@@ -163,7 +160,7 @@ BCA Student | MERN Dev | CyberSec + cloud Learner
 If you have any questions, feel free to reach out:
 
 📩 Email: [raeenfatimahere@gmail.com](mailto:raeenfatimahere@gmail.com)
-🔗 Portfolio: \[coming soon...]
+🔗 Portfolio: https://raeen-s-portfolio.vercel.app/
 🔗 GitHub: [github.com/raeen-fatima](https://github.com/raeen-fatima)
 
 ---
