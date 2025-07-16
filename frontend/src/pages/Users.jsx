@@ -71,10 +71,10 @@ export default function Users() {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", duration: 0.6 }}
-          className="min-h-screen bg-white text-black  border border-gray-700 px-4 py-8"
+          className="min-h-screen "
         >
           {/* Users List */}
-          <motion.ul className="space-y-4 max-w-4xl mx-auto">
+          <motion.ul className=" bg-white text-black  border border-gray-700 space-y-4 max-w-4xl mx-auto px-4 py-2">
             {paginatedUsers.map((user, index) => (
               <UserCard
                 key={user._id}
