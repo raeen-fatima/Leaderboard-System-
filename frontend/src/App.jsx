@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import ClaimHistory from "./pages/ClaimHistory";
 
 export default function App() {
   return (
@@ -11,7 +10,6 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/*" element={<Home />} />
-          <Route path="/history" element={<ClaimHistory />} />
         </Routes>
       </Router>
     </>

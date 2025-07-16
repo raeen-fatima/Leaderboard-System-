@@ -12,7 +12,7 @@ export default function Pagination({ page, totalPages, onPageChange }) {
         Prev
       </button>
 
-      <span className="text-lg font-bold text-white">{page} / {totalPages}</span>
+      <span className="text-md font-bold text-black">{page} / {totalPages}</span>
 
       <button
         onClick={() => onPageChange(Math.min(totalPages, page + 1))}

@@ -8,7 +8,7 @@ export default function Home() {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white flex flex-col justify-between">
+    <div className="min-h-screen text-black flex flex-col justify-between">
       <div className="flex-grow p-4 pb-20">
         <Routes>
           <Route path="/" element={<Users />} />
