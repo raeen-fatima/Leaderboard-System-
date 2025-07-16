@@ -55,14 +55,14 @@ export default function ClaimHistory() {
         </h2>
 
         {/* Table Headers */}
-        <div className="hidden md:grid grid-cols-12 text-gray-300 mb-2 max-w-5xl mx-auto px-2">
+        <div className="hidden md:grid grid-cols-12 text-gray-900 mb-2 max-w-5xl mx-auto px-2">
           <div className="col-span-4 font-semibold">Name</div>
           <div className="col-span-3 font-semibold">Points</div>
           <div className="col-span-5 font-semibold text-right">Time</div>
         </div>
 
         {/* History List */}
-        <ul className="bg-white border border-gray-600 rounded-2xl space-y-4 max-w-5xl mx-auto px-2">
+        <ul className="bg-white border border-gray-600 rounded-2xl space-y-4 max-w-5xl mx-auto  p-2">
           {paginated.map((entry, i) => (
             <motion.li
               key={entry._id}
@@ -87,7 +87,7 @@ export default function ClaimHistory() {
                 <TiStarburst className="text-orange-500 text-xl" />
               </div>
 
-              <div className="md:col-span-5 text-sm text-gray-300 text-right hidden md:block">
+              <div className="md:col-span-5 text-sm text-gray-500 text-right hidden md:block">
                 <FaClock className="inline-block mr-2" />
                 {new Date(entry.claimedAt).toLocaleString()}
               </div>
