@@ -105,7 +105,8 @@ VITE_API_BASE = http://localhost:3000
 `GET /api/history`
 
 ---
-
+![Postman](https://github.com/user-attachments/assets/820cc4c0-8202-4378-a242-059ba62724ab)
+![Postman](https://github.com/user-attachments/assets/2f7d834a-ebf6-469f-a1b6-8845e09b125f)
 ## 🧩 Components Overview
 
 | Component      | Purpose                             |
@@ -122,26 +123,26 @@ VITE_API_BASE = http://localhost:3000
 
 ### 💻 Desktop View
 
-![UserList](https://github.com/user-attachments/assets/f091cb98-923d-4de9-8625-418b828611f1)
-![Pagination](https://github.com/user-attachments/assets/95eb5d6d-3bc4-4a6b-b630-9d78ed2a5478)
-![Leaderboard](https://github.com/user-attachments/assets/c88c5c4d-27ea-4d18-8844-eee2097eca9f)
-![Leaderboard](https://github.com/user-attachments/assets/be0825b6-d6f5-4ec0-a2b5-154f0f9485c5)
-![Claim History](https://github.com/user-attachments/assets/1bf7bce1-5010-443e-96ac-605e1f970e2e)
-![Claim History](https://github.com/user-attachments/assets/9dbcf33c-92a8-45e1-a7b0-8cc59238e025)
-![Claim Points](https://github.com/user-attachments/assets/10f5e53e-0fdc-4046-a25a-2aae27ce1f26)
-![Toast](https://github.com/user-attachments/assets/6e68a948-f365-46e3-b63f-41293943cac4)
+![UserList](https://github.com/user-attachments/assets/0305615b-1dab-4086-8375-8f3f519d0e22)
+![Pagination](https://github.com/user-attachments/assets/a5a86679-5c0c-4c08-a393-256b675068fb)
+![Leaderboard](https://github.com/user-attachments/assets/03a017fa-fb3c-4098-b080-4fe9a571a573)
+![Leaderboard](https://github.com/user-attachments/assets/189bb4a4-d292-4a96-9240-07d33e14e7a2)
+![Claim History](https://github.com/user-attachments/assets/eb01dd74-e338-4bea-9a16-ec1a1afbd20f)
+![Claim History](https://github.com/user-attachments/assets/f9a4f14c-4a31-4776-a0fe-7b5ba173f5c0)
+![Claim Points](https://github.com/user-attachments/assets/2c176905-a7cb-4292-b8f1-f2580fd7605b)
+![Toast](https://github.com/user-attachments/assets/1884d2a5-0fff-4abe-a1c0-e0a03ac5a321)
 
 
 ### 📱 Mobile View
 
-![UserList](https://github.com/user-attachments/assets/7512a330-830d-4b70-8491-38850dc4d434)
-![Pagination](https://github.com/user-attachments/assets/955784b9-4a44-43f7-8beb-40445f88b6c8)
-![Leaderboard](https://github.com/user-attachments/assets/499decc0-14e7-4ae9-91d0-37b164f7a4d1)
-![Leaderboard](https://github.com/user-attachments/assets/bce91ad9-886b-4fd8-bdac-1d89b25947df)
-![Claim History](https://github.com/user-attachments/assets/2955e232-d4a1-41ee-8217-dab35d970b48)
-![Claim History](https://github.com/user-attachments/assets/5199ec2e-4824-479e-830b-b77a4d433094)
-![Claim Points](https://github.com/user-attachments/assets/d2be4788-68b7-4177-911f-e180754ebc99)
-![Toast](https://github.com/user-attachments/assets/f51af5d8-55a6-4524-87e5-24ba9da996d6)
+![UserList](https://github.com/user-attachments/assets/1bd9de5e-7a5a-4153-b964-689f0d6a0841)
+![Pagination](https://github.com/user-attachments/assets/ce874525-b0c5-4c56-ace9-2971c9364fea)
+![Leaderboard](https://github.com/user-attachments/assets/079f240c-ff9f-4b22-9340-43434d980275)
+![Leaderboard](https://github.com/user-attachments/assets/eb9ea1fd-86b7-4a98-904e-8630a99d6d63)
+![Claim History](https://github.com/user-attachments/assets/149d2476-0ec4-42ce-b78c-9b5fec261eea)
+![Claim History](https://github.com/user-attachments/assets/dab62da3-6703-4353-9622-0ae694b7e967)
+![Claim Points](https://github.com/user-attachments/assets/7b7aa65e-b79a-4b0e-9c00-689225f8bfc0)
+![Toast](https://github.com/user-attachments/assets/57e14d14-b15a-4572-80b6-700d23e2b752)
 
 
 ---
