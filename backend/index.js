@@ -11,14 +11,27 @@ connectDB();
 
 const app = express();
 const httpServer = createServer(app);
-const io = new Server(httpServer, { cors: { origin: "*" } });
 
+// ✅ Corrected socket.io setup with CORS
+const io = new Server(httpServer, {
+  cors: {
+    origin: ["http://localhost:5173", "https://leaderboard-system-iota.vercel.app"],
+    credentials: true,
+  }
+});
+
+// Middleware
 app.use(cors());
 app.use(express.json());
+
+// Routes
 app.use("/api", userRoutes);
 
-// Attach io globally to app
+// Global socket access
 app.set("io", io);
 
+// Start server
 const PORT = process.env.PORT || 5000;
-httpServer.listen(PORT, () => console.log(`🚀 Server running at http://localhost:${PORT}`));
+httpServer.listen(PORT, () =>
+  console.log(`🚀 Server running at http://localhost:${PORT}`)
+);
