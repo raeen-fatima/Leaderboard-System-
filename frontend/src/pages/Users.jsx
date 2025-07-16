@@ -19,7 +19,6 @@ export default function Users() {
   const perPage = 10;
   const navigate = useNavigate();
 
-
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -60,47 +59,48 @@ export default function Users() {
       <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-8 text-black">
         🏆 Users List
       </h2>
-      {/* Add user input */}
-      <AddUserForm
-        newUser={newUser}
-        setNewUser={setNewUser}
-        onAdd={addUser}
-        onHistory={() => navigate("/history")} // Or set modal, tab, etc.
-      />
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", duration: 0.6 }}
-        className="min-h-screen bg-white text-black rounded-2xl border border-gray-700 px-4 py-8"
-      >
-        {/* Users List */}
-        <motion.ul className="space-y-4 max-w-4xl mx-auto">
-          {paginatedUsers.map((user, index) => (
-            <UserCard
-              key={user._id}
-              user={user}
-              index={index}
-              page={page}
-              perPage={perPage}
-              onClick={() => setSelectedUser(user)}
-            />
-          ))}
-        </motion.ul>
+      <div className="bg-white p-4 py-16 rounded-2xl border border-gray-600">
+        {/* Add user input */}
+        <AddUserForm
+          newUser={newUser}
+          setNewUser={setNewUser}
+          onAdd={addUser}
+          onHistory={() => navigate("/history")} // Or set modal, tab, etc.
+        />
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 0.6 }}
+          className="min-h-screen bg-white text-black  border border-gray-700 px-4 py-8"
+        >
+          {/* Users List */}
+          <motion.ul className="space-y-4 max-w-4xl mx-auto">
+            {paginatedUsers.map((user, index) => (
+              <UserCard
+                key={user._id}
+                user={user}
+                index={index}
+                page={page}
+                perPage={perPage}
+                onClick={() => setSelectedUser(user)}
+              />
+            ))}
+          </motion.ul>
 
+          {/* Claim Modal */}
+          <ClaimModal
+            user={selectedUser}
+            onClose={() => setSelectedUser(null)}
+            onClaimSuccess={fetchUsers}
+          />
+        </motion.div>
         {/* Pagination */}
         <Pagination
           page={page}
           totalPages={totalPages}
           onPageChange={setPage}
         />
-
-        {/* Claim Modal */}
-        <ClaimModal
-          user={selectedUser}
-          onClose={() => setSelectedUser(null)}
-          onClaimSuccess={fetchUsers}
-        />
-      </motion.div>
+      </div>
     </div>
   );
 }

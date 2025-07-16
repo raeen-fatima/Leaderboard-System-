@@ -54,53 +54,48 @@ export default function ClaimHistory() {
           ⏱ Claim History
         </h2>
 
-        {/* Table Headers */}
-        <div className="hidden md:grid grid-cols-12 text-gray-900 mb-2 max-w-5xl mx-auto px-2">
-          <div className="col-span-4 font-semibold">Name</div>
-          <div className="col-span-3 font-semibold">Points</div>
-          <div className="col-span-5 font-semibold text-right">Time</div>
-        </div>
-
-        {/* History List */}
-        <ul className="bg-white border border-gray-600 rounded-2xl space-y-4 max-w-5xl mx-auto  p-2">
-          {paginated.map((entry, i) => (
-            <motion.li
-              key={entry._id}
-              whileHover={{ scale: 1.01 }}
-              className="bg-white p-4  border-b border-gray-400 last:border-none flex flex-col gap-3 md:grid md:grid-cols-12 md:items-center hover:shadow-md"
-            >
-              <div className="md:col-span-4 flex items-center gap-3">
-                <div className="w-10 h-10 bg-black text-white font-bold rounded-full flex items-center justify-center text-lg">
-                  {entry.userId?.name?.charAt(0).toUpperCase() || "?"}
-                </div>
-                <div>
-                  <div className="font-semibold">{entry.userId?.name}</div>
-                  <div className="text-sm text-gray-600 md:hidden">
-                    {new Date(entry.claimedAt).toLocaleString()}
+        <div className="bg-white p-4 py-16 rounded-2xl border border-gray-600">
+          {/* History List */}
+          <ul className="bg-white border border-gray-600  space-y-4 max-w-5xl mx-auto  p-2">
+            {paginated.map((entry, i) => (
+              <motion.li
+                key={entry._id}
+                whileHover={{ scale: 1.01 }}
+                className="bg-white p-4  border-b border-gray-400 last:border-none flex flex-col gap-3 md:grid md:grid-cols-12 md:items-center hover:shadow-md"
+              >
+                <div className="md:col-span-4 flex items-center gap-3">
+                  <div className="w-10 h-10 bg-black text-white font-bold rounded-full flex items-center justify-center text-lg">
+                    {entry.userId?.name?.charAt(0).toUpperCase() || "?"}
+                  </div>
+                  <div>
+                    <div className="font-semibold">{entry.userId?.name}</div>
+                    <div className="text-sm text-gray-600 md:hidden">
+                      {new Date(entry.claimedAt).toLocaleString()}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="md:col-span-3 text-orange-600 flex items-center gap-2">
-                <span>+{entry.points}pts</span>
+                <div className="md:col-span-3 text-orange-600 flex items-center gap-2">
+                  <span>+{entry.points}pts</span>
 
-                <TiStarburst className="text-orange-500 text-xl" />
-              </div>
+                  <TiStarburst className="text-orange-500 text-xl" />
+                </div>
 
-              <div className="md:col-span-5 text-sm text-gray-500 text-right hidden md:block">
-                <FaClock className="inline-block mr-2" />
-                {new Date(entry.claimedAt).toLocaleString()}
-              </div>
-            </motion.li>
-          ))}
-        </ul>
+                <div className="md:col-span-5 text-sm text-gray-500 text-right hidden md:block">
+                  <FaClock className="inline-block mr-2" />
+                  {new Date(entry.claimedAt).toLocaleString()}
+                </div>
+              </motion.li>
+            ))}
+          </ul>
 
-        {/* Pagination */}
-        <Pagination
-          page={page}
-          totalPages={totalPages}
-          onPageChange={setPage}
-        />
+          {/* Pagination */}
+          <Pagination
+            page={page}
+            totalPages={totalPages}
+            onPageChange={setPage}
+          />
+        </div>
       </motion.div>
     </>
   );

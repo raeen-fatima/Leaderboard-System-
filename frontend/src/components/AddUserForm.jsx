@@ -2,7 +2,7 @@ import { FaUserPlus, FaClock } from "react-icons/fa";
 
 export default function AddUserForm({ newUser, setNewUser, onAdd, onHistory }) {
   return (
-    <div className="flex flex-col md:flex-row gap-3 mb-10 items-center bg-white p-6 px-12  rounded-2xl border border-gray-600 backdrop-blur-md shadow-lg max-w-4xl mx-auto">
+    <div className="flex flex-col md:flex-row gap-3 mb-10 items-center bg-white p-6 px-12   border border-gray-600 backdrop-blur-md shadow-lg max-w-4xl mx-auto">
       <input
         type="text"
         value={newUser}
